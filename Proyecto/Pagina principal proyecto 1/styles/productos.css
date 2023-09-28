@@ -1,0 +1,168 @@
+body{
+    background-color: aliceblue;
+}
+
+.contenerCarroselSup{
+	display: block;
+	max-width: 75%;
+	max-height: 75%;
+	object-fit: contain;
+}
+
+.imagenCarruselProducto{
+	padding-bottom: 100%; /* Este 100% es un 100% del ANCHO, me hace un cuadrado */
+	position: relative;
+}
+
+.imagenCarruselProducto img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.contenedorProducto{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.detalle{
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding-block: 20px;
+    padding-inline: 15px;
+}
+
+.tiempo{
+    color: #444
+}
+
+.tiempo span{
+    margin-right: 15px;
+}
+
+
+.caracteristicaProducto{
+    display: block;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #333;
+    padding-bottom: 7px;
+}
+
+.divisiondetalle{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #999
+}
+
+
+.detallePrecio{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+
+.descuentos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gastos, .total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.descuentoCalculo, .gastosEnvios{
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.precioFinal{
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.realizarCompra{
+    padding: 10px;
+}
+
+.continuar{
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bi-heart{
+    font-size: 24px;
+    color:#4FB9FC
+}
+
+.divisiondetalle{
+    width: 100%;
+    height: 1px;
+    border: 1px solid #999
+}
+
+
+
+
+
+
+@media (max-width: 576px){
+    .contenedor{
+        justify-content: center;
+    }
+    .comprasDesarrollo{
+        width: 95%;
+        justify-content: center;
+        padding: auto;
+    }
+    .fotoProducto{
+        display: none;
+    }
+    .productoPrecioCompra{
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .numeroProductos {
+        margin-top: 65px;
+    }
+    .eliminar{
+        margin-top: 20px;
+    }
+    .cambiar{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px){
+    .contenedor{
+        width: 100%;
+        margin: 0;
+    }
+    .comprasDesarrollo{
+        width: 100%;
+    }
+    .tituloCompra H3{
+        font-size: 16px;
+    }
+    .productoPrecioCompra{
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .numeroProductos{
+        margin-top: 65px;
+    }
+}

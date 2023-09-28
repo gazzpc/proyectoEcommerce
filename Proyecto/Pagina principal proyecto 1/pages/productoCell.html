@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ec0c4b2b27.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/productos.css">
+  <title>Selecciona nuestros productos: Celular</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid mx-auto">
+      <a class="navbar-brand" href="../index.html"><i class="fa-sharp fa-solid fa-code fa-xl iconoCodigo"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse divColapso" id="navbarSupportedContent">
+        <form class="d-flex mx-auto">
+          <input class="form-control me-2 buscar" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-light" type="submit">Buscar</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu navCategorias">
+              <li>
+                <a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/celulares.html">Celulares</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/notebooks.html">Computadoras</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/error404.html">Electrodomesticos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pages/error404.html">Monitotes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cuenta
+            </a>
+            <ul class="dropdown-menu registro">
+              <li>
+                <a class="dropdown-item navRegistro" href="./login.html">Inicia sesion</a>
+              </li>
+              <li>
+                <a class="dropdown-item navRegistro" href="./register.html">Registrate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./acerca.html">Acerca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/carrito.html" style="padding-top: 0;"><i class="bi bi-cart3" style="font-size: 1.5rem; "></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5 comprasDesarrollo">
+    <div class="row contenedor g-3">
+      <div class="col-md-12 col-lg-7 contenedorProducto d-flex justify-content-center">
+        <div class="contenerCarroselSup col w-100">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade shadow-2-strong">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active text-bg-dark" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="text-bg-dark" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="text-bg-dark"aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="text-bg-dark "aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner bg-white">
+              <div class="carousel-item active imagenCarruselProducto">
+                <img src="../Assets/cel1.webp" class="d-block object-fit-contain w-100" alt="Celular Samsung S23 de 128Gb almacenamiento">
+              </div>
+              <div class="carousel-item imagenCarruselProducto">
+                <img src="../Assets/cell1-dorso.jpg" class="d-block w-100" alt="Vista dorsal del seclular Samsung S23">
+              </div>
+              <div class="carousel-item imagenCarruselProducto">
+                <img src="../Assets/cell1-char.jpg" class="d-block w-100" alt="Garantia Samsung S23">
+              </div>
+              <div class="carousel-item imagenCarruselProducto">
+                <img src="../Assets/cell1-s23.jpg" class="d-block w-100" alt="Otros colores del Samsung S23">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <div class="bg-dark text-bg-primary rounded-5 p-2">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </div>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+             <div class="bg-dark text-bg-primary rounded-5 p-2">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </div>
+            </button>
+          </div>
+          <div class="divisiondetalle"></div>
+          <div class="d-flex col-lg-12">
+            <div class="container-fluid ms-2 mt-2 mb-5">
+              <div id="myCarouselb" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row justify-content-between">
+                      <div class="col-2 col-md-5">
+                        <div class="card">
+                          <a href="#">
+                            <img src="../Assets/Compu2.webp" class="object-fit-contain" alt="Intel Dual Core 8gb Led 22">
+                          </a>
+                          <div class="linea"></div>
+                          <h6>CPU escritorio</h6>
+                            <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                        </div>
+                      </div>
+                      <div class="col-2 col-md-5">
+                        <div class="card">
+                          <a href="#">
+                            <img src="../Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+                          </a>
+                          <div class="linea"></div>
+                          <h6>Samsung S23</h6>
+                            <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-between">
+                      <div class="col-12 col-md-5">
+                        <div class="card">
+                          <a href="#">
+                            <img src="../Assets/Compu2.webp" class="object-fit-contain" alt="Intel Dual Core 8gb Led 22">
+                          </a>
+                          <div class="linea"></div>
+                          <h6>CPU escritorio</h6>
+                            <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                        </div>
+                      </div>
+                      <div class="col-2 col-md-5">
+                        <div class="card">
+                          <a href="#">
+                            <img src="../Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+                          </a>
+                          <div class="linea"></div>
+                          <h6>Samsung S23</h6>
+                            <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselb" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarouselb" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-5">
+        <div class="detalle">
+          <div class="tiempo mb-3 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <span>Nuevo</span>
+            <span>+ de 1000 vendidos</span>
+          </div>
+          <div class="d-flex">
+            <span class="caracteristicaProducto">Samsung Galaxy S23 128gb Color Phantom black</span>
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="divisiondetalle "></div>
+          <div class="detallePrecio">
+            <span class="precioReal display-6 text-primary-emphasis "> 780.177</span>
+            <span class="signoPeso display-6 text-primary-emphasis">$ </span>
+          </div>
+          <div class="divisiondetalle"> </div>
+          <div class="descuentos">
+            <span class="descuentoCalculo fs-3 text-success">11%</span>
+            <span class="signoPeso fs-3 text-success">-96.426,37$ </span>
+          </div>
+          <div class="gastos">
+            <span class="gastosEnvios fs-3 text-success">Envío Gratis</span>
+            <span class="signoPeso fs-3 text-success">0 $</span>
+          </div>
+          <div class="divisiondetalle"> </div>
+          <div class="total mt-5">
+            <span class="totalProductos fs-2 text-primary-emphasis">Total de mis productos:</span>
+            <span class="precioFinal">$520.897</span>
+          </div>
+          <div class="realizarCompra d-grid mt-5">
+            <button class="btn btn-outline-primary continuar mb-3" type="button">Comprar ahora</button>
+          </div>
+        </div>
+        <div class="detalle m-4 d-block justify-content-center align-content-center ">
+          <span class="descripcionTitulo  fs-2 text-center ">Descripción del Producto</span>
+          <span class="caracteristicaProducto fs-5 text-bg-secondary rounded-5 p-2 text-center">Samsung Galaxy S23 128gb Color Phantom black</span>
+          <ul class="listaDescripcion m-5 bg-info-subtle text-center fw-semibold  ">
+            <li class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Samsung Galaxy S23</li>
+            <li class=" p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Tamaño de la pantalla: 6.1 "</li>
+            <li class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Memoria interna: 128 GB</li>
+            <li class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">RAM 8 GB</li>
+            <li class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Cámara trasera principal: 50 Mpx</li>
+            <li class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">Cámara frontal principal: 12 Mpx</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div >
+  </div>
+  <div class="interes ofertaMd">
+    <h3 class="px-5 mb-3">También podría interesarte</h3>
+  </div>
+  <div class="row ms-5 ofertaMd">
+    <div class="d-flex col-lg-9">
+      <div class="container ms-2 mt-2 mb-5">
+        <div id="myCarouselb" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-between">
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/Compu2.webp" alt="Intel Dual Core 8gb Led 22">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>CPU escritorio</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Samsung S23</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/camara.webp" class="object-fit-contain" alt="Cámara de video Gadnic Extreme 10">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Camara Gadnic</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/monitor.webp" class="object-fit-contain" alt="Monitor Philips Pc De 27">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Monitor Philips</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-between">
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/Compu2.webp" class="object-fit-contain" alt="Intel Dual Core 8gb Led 22">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>CPU escritorio</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Samsung S23</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/camara.webp" class="object-fit-contain" alt="Cámara de video Gadnic Extreme 10">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Camara Gadnic</h6>
+                    <button type="button" class="btn btn-info mt-4 mb-3">Ver oferta</button>
+                  </div>
+                </div>
+                <div class="col-2 col-md-3">
+                  <div class="card">
+                    <a href="#">
+                      <img src="../Assets/monitor.webp" class="object-fit-contain" alt="Monitor Philips Pc De 27">
+                    </a>
+                    <div class="linea"></div>
+                    <h6>Monitor Philips</h6>
+                    <a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselc" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselc" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="comentariosSeccion m-3  d-sm-block d-lg-inline-grid w-75 ">
+    <div class="consultasTitulo bg-secondary rounded-start-5 rounded-end-5">
+      <h3 class="px-5 p-1 m-3 text-light">Preguntale al vendedor</h3>
+    </div>
+    <div class="preguntasYRespuestas ">
+      <span class="mx-5 fs-3 bi-bookmark-fill"> Consultas más recientes</span>
+    </div>
+    <div class="detalle m-5 d-grid">
+      <span class="fecha ps-5 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">2023-09-07</span>
+      <span class="pregunta fw-semibold mt-3 bi-chat-dots"> Hola, sirve para red 5g?? </span>
+      <span class="respuesta mt-3 text-end bi-check2-all"> Hola. Claro que sí</span>
+    </div>
+    <div class="detalle m-5 d-grid">
+      <span class="fecha ps-5 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">2023-09-05</span>
+      <span class="pregunta fw-semibold mt-3 bi-chat-dots"> Hola no tiene memoria expandible verdad? </span>
+      <span class="respuesta mt-3 text-end bi-check2-all"> No es expandible. Estamos a tu disposición y esperamos tu compra, muchas gracias por preguntar!</span>
+    </div>
+    <div class="detalle m-5 d-grid">
+      <span class="fecha ps-5 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">2023-09-06</span>
+      <span class="pregunta fw-semibold mt-3 bi-chat-dots"> Hola se le puede poner 2 SIM, o tiene que ser 1 SIM y un eSIM ? GRacias </span>
+      <span class="respuesta mt-3 text-end bi-check2-all"> Le informamos que el Samsung Galaxy S23 cuenta con una SIM fisica y una E-SIM, el Samsung Galaxy S23 Ultra cuenta con Dual SIM Fisico. Gracias por su consulta! Saludos.</span>
+    </div>
+  </div>
+  <footer class="containerfooter-fluid" style="background-color: #4FB9FC">
+		<div class="row">
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<div class="containerLogo">
+					<img class="w-25" src="../Assets/logo-pc copy.png" alt="logo.png">
+				</div>
+				<p class="h1 text-white text-center mt-1 mb-0">Electro Rolling</p>
+				<p class="text-white text-center mb-0">Los último en Teconologia</p>
+				<p class="text-white text-center mb-0">Solo lo encontrás aquí</p>
+			</div>
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<ul class="list-unstyled text-center fs-5 mt-5 redes-sociales">
+					<li><a href="https://facebook.com"><i class="fa-brands fa-facebook px-2"></i>Facebook</a></li>
+					<li><a href="https://instagram.com"><i class="bi bi-instagram px-2"></i>Instagram</a></li>
+					<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter px-2"></i></i>Twitter-X</a></li>
+				  <p class="fs-6 text-light mt-5 mb-0">&copy; Todos los derechos reservados</p>
+        </ul>
+    	</div>
+			<div class="col-12 col-md-4 fs-3 info-footer text-center mt-3">
+				<p class="fs-4 text-secondary mb-0 mt-2">Atención al cliente:</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-secondary mb-0">Lu a Vi de 09.00 a 18.00</p>
+				<p class="fs-4 text-secondary">Sa de 9.00 a 13.00</p>
+			</div>
+		</div>
+	</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

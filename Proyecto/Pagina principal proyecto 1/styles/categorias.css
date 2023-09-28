@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    --azul-medio:#4FB9FC
+}
+
+.iconoCodigo{
+    color:aliceblue;
+}
+
+.pagos img{
+    width: 14rem
+}
+
+.catalogo{
+    width: 100%;
+    margin-top: 1rem;
+    padding-block: 1rem;
+    background-color: #4FB9FC;
+    color: aliceblue;
+    text-align: center;
+}
+
+.padreCards{
+    gap: 5%;
+    row-gap: 3.5rem;
+}
+.form-check {
+    display:flex;
+    min-height: auto;
+    padding-left: auto;
+    margin-bottom: 0.5rem;
+
+    .form-check-input {
+      float:none;
+    }
+}
+
+.producto {
+    width: 30%;
+    transition: all .4s;
+}
+
+.producto:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 9px 11px 4px rgba(0,0,0,0.2);
+    z-index: 1000000;
+}
+
+.ofertaBoton{
+    background-color: #0dcaf0;
+    color: white;
+    font-weight: 300;
+}
+
+.ofertaBoton:hover, .ofertaBoton:active{
+    color: white !important;
+    background-color: #0dcaf0 !important;
+    font-weight: 600;
+} 
+
+@media (max-width: 588px){
+    
+    .padreFilters{
+        font-size: small;
+        text-align: center;
+    }
+    
+    .form-check{
+        justify-content: center;
+    }
+    .padreFilters span {
+        font-size: xx-large;
+    }
+    .padreCards{
+        width: 100%;
+        align-content: center;
+        font-size: small;
+        padding-top: 1rem;
+    }
+   .padreCards h5{
+        font-size: medium;
+    }
+
+    .monto{
+        font-size: 1.1rem;
+    }
+
+    .producto{
+        width: 100%;
+        justify-content: center;
+    }   
+}
+
+@media (min-width:589px) and (max-width: 766px){
+    .padreFilters{
+        width: 20%;
+        font-size: medium;
+    }
+    .padreFilters h3{
+        font-size: large;
+    }
+
+    .producto{
+        width: 40%;
+    }
+    .padreCards{
+        width: 80%;
+
+        font-size: small;
+    }
+   .padreCards h5{
+        font-size: medium;
+    }
+}
+
+@media (min-width:767px) and (max-width: 992px){
+    .padreFilters{
+        width: 30%;
+        font-size: medium;
+    }
+    .padreFilters h3{
+        font-size: large;
+    }
+    .form-check-label{
+        font-size: smaller;
+    }
+    .padreCards{
+        width: 70%;
+        gap: auto;
+        font-size: large;
+    }
+   .padreCards h5{
+        font-size: large;
+    }
+}
+
+@media (min-width: 993px){
+    .padreFilters{
+        width: 25%;
+    }
+}

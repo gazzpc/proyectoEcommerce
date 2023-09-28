@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, #0e3959 0%, #40A8C4 100%);
+}
+
+.contactanos, .contactanosTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactanosTitulo h2{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.contactanos {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 5px 6px 11px 0px rgba(0,0,0,0.75);
+}
+
+.contactanos H3{
+    color: #243A73;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.formulario{
+    font-size: 1.3rem;
+    position: relative;
+    width: 50%;
+}
+
+.formulario .formularioMitad{
+    display: flex;
+    gap: 20px;
+}
+
+.formularioInput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formulario, .formularioCompleto ,.formularioInput{
+    width: 100%;
+}
+
+.formularioInput label{
+    color: #18b7ff;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.formularioInput input{
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.formularioInput textarea{
+    padding: 5px;
+    font-size: 1.3rem;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.formularioInput button{
+    padding: 5px;
+    background-color: #512B81;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    max-width: 120px;
+    font-weight: 600;
+}
+
+.formularioInput ::placeholder{
+    color: #777;
+}
+
+.mapaEmpresa{
+    padding: 0;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+@media (max-width: 991px){
+    .contenedor{
+        justify-content: center;
+    }
+    .contactanos{
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        padding: 0px;
+        margin-left: 0;
+    }
+    .formulario .formularioMitad{
+        display: flex;
+        gap: 5px;
+    }
+    .contenedorFormulario{
+        padding-inline: 30px;
+    }
+    .mapaEmpresa{
+        padding: 0;
+    }
+    .formulario, .formularioMitad{
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    .contenedorFormulario h3{
+        padding-top: 15px;
+    }
+
+}
+
+
+

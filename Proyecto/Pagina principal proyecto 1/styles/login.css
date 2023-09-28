@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #0e3959 0%, #40A8C4 100%);
+}
+
+.iconoCodigo{
+    color:aliceblue;
+}
+
+.navbar, footer{
+    background-color: #4FB9FC;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.nav-link:focus{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.monto{
+    font-size: 24px;
+}
+
+.pagos img{
+    width: 14rem
+}
+
+.redes-sociales a{
+    color: white;
+}
+
+.info-footer{
+    color:white;
+}
+
+.containerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
+@media (max-width: 766px){
+    .divColapso{
+        margin-top: 10px;
+    }
+    .pagos{
+        padding-block: 1rem;
+    }
+}
+
+@media (min-width:767px) and (max-width: 992px){
+    .navbar{
+        padding-top: 5px;
+        text-align: center;
+    }
+    .navbar-nav{ 
+        padding-top: 7px;
+    }
+    .divColapso{
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-width: 993px){
+    .navbar{
+        padding-inline: 0;
+    }
+    .form-control{
+        font-size: 1.2rem;
+    }
+    .divColapso{
+        font-size: 1.2rem;
+    }
+}
+
+@media ( max-width: 576px){
+    .formulario1{
+        width: 50%;
+    }
+    .formulario2{
+        width: 80%;
+    }
+}
+
+.footer{
+    background-color: #4FB9FC;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+

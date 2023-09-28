@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/ec0c4b2b27.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./styles/index.css">
+	<title>Electro Rolling</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><i class="fa-sharp fa-solid fa-code fa-xl iconoCodigo"></i></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<form class="d-flex mx-auto py-2">
+					<input class="form-control me-2 buscar" type="search" placeholder="Buscar producto" aria-label="Search">
+					<button class="btn btn-light" type="submit">Buscar</button>
+				</form>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Categorías
+						</a>
+						<ul class="dropdown-menu navCategorias">
+							<li>
+								<a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./pages/celulares.html">Celulares</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./pages/notebooks.html">Computadoras</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./pages/error404.html">Electrodomesticos</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="./pages/error404.html">Monitotes</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Cuenta
+						</a>
+						<ul class="dropdown-menu registro">
+							<li>
+								<a class="dropdown-item navRegistro" href="./pages/login.html">Inicia sesion</a>
+							</li>
+							<li>
+								<a class="dropdown-item navRegistro" href="./pages/login.html">Registrate</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/acerca.html">Acerca</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/carrito.html" style="padding-top: 0;"><i class="bi bi-cart3" style="font-size: 1.5rem; "></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+  <div class="container">
+		<div id="carouselExampleIndicators" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="./pages/error404.html"><img src="./Assets/imagenCarrusel4.webp" class="d-block w-100" alt="promocion"></a>
+				</div>
+				<div class="carousel-item">
+					<a href="./pages/error404.html"><img src="./Assets/ImagenCarrusel5.webp" class="d-block w-100" alt="promocion"></a>
+				</div>
+				<div class="carousel-item">
+					<a href="./pages/error404.html"><img src="./Assets/ImagenCarrusel6.webp" class="d-block w-100" alt="promocion"></a>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+  </div>
+	<div class="container-fluid text-center py-4 bg-light">
+		<div class="row">
+			<div class="col-md-4 pagos">
+				<img src="./Assets/metodosPago.png" alt="Metodos pago credito debito">
+				<span style="font-size: 1rem;">Pagá con crédito o débito</span>
+			</div>
+			<div class="col-md-4 pagos">
+				<i class="bi bi-currency-bitcoin"></i>
+				<span style="font-size: 1rem;">Pagá con Bitcoin a través de la plataforma Binance. <a href="./pages/error404.html">Conocé mas</a></span>
+			</div>
+			<div class="col-md-4 pagos">
+				<i class="bi bi-truck"></i>
+				<span style="font-size: 1rem;">Envíos a todo el pais <a href="./pages/error404.html">en más de 10 sucursales</a></span>
+			</div>
+		</div>
+	</div>
+  <div class="oferta mb-5">
+    <h3>Productos destacados de la semana</h3>
+  </div>
+	<div class="container my-3 mb-5">
+		<div class="row g-5">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/productoPc.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/Compu2.webp" alt="Intel Dual Core 8gb Led 22">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 186.899</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>CPU escritorio</h5>
+					<p>Computadora Completa Amd Intel Dual Core 8gb Led 22 Lol</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/productoPc.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/cel2.webp" alt="Samsung Galaxy Z Flip4">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 889.999</span> 
+					<span class="descuento">35% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Galaxy Z Flip4</h5>
+					<p>Samsung Galaxy Z Flip4 5G 5G 128 GB blue 8 GB RAM</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/smartWatch.webp" alt="Smartwatch W27 Serie 7">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 18.999</span> 
+					<span class="descuento">Mismo precio 6 cuotas</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Smartwatch W27</h5>
+					<p>Smartwatch W27 Serie 7 1.75 Caja De Aleación De Zinc</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/productoCell.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/cel1.webp" alt="Samsung Galaxy S23 128gb">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 568.999</span>
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung Galaxy</h5>
+					<p>Samsung Galaxy S23 128gb Color Phantom black 8 GB</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/productoCell.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/camara.webp" alt="Cámara de video Gadnic Extreme 10">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 48.099</span> 
+					<span class="descuento">Mismo precio 3 cuotas</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Camara Gadnic</h5>
+					<p>Cámara de video Gadnic Extreme 10 4K MCDEP010 NTSC/PAL gris</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/heladera.webp" alt="Heladera inverter no frost Samsung RS27T5561">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 3.324.999</span> 
+					<span class="descuento">10% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Heladera inverter</h5>
+					<p>Heladera inverter no frost Samsung RS27T5561 black doi</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/monitor.webp" alt="Monitor Philips Pc De 27">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 185.999</span> 
+					<span class="descuento">Mismo precio en 3 cuotas</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Monitor Philips</h5>
+					<p>Monitor Philips Pc De 27'' Full Hd serie - 271e1sca/55 Color Negro</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<div class="card ofertaProducto">
+					<a href="./pages/error404.html">
+						<img class="w-75 mx-auto object-fit-contain" src="./Assets/lavarropas.webp" alt="Lavarropas automático Samsung inverter silver">
+					</a>
+					<div class="linea"></div>
+					<span class="monto">$ 799.999</span> 
+					<span class="descuento">Mismo precio en 6 cuotas </span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Inverter</h5>
+					<p>Lavarropas automático Samsung inverter 9,5kg Silver 220VS</p>
+					<a class="btn mt-1 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="oferta">
+		<h3>Descuentos exclusivos por 48 hs</h3>
+	</div>
+	<div class="container my-5">
+		<div class="row g-5 justify-content-between">
+			<div class="col-12 col-md-5">
+				<div class="card">
+					<img src="./Assets/tecno.jpeg" class="card-img-top" alt="Descuentos relampágos en celulares, tablets y notebooks">
+					<div class="card-body">
+						<h5 class="card-title">Aprovecha estas ofertas relampágos en celulares, tablets y notebooks seleccionadas</h5>
+					</div>
+					<ul class="list-group list-group-flush">
+						<a class="btn btn-primary mb-3" href="./pages/error404.html" role="button">Accede a todas las ofertas</a>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-md-5">
+				<div class="card">
+					<img src="./Assets/ofertalavarropas.png" class="card-img-top" alt="descuentos exclusivos de hasta 30% en lavarropas, cocinas y aspiradoras">
+					<div class="card-body">
+						<h5 class="card-title">Accede a descuentos exclusivos de hasta 30% en lavarropas, cocinas y aspiradoras seleccionadas</h5>
+					</div>
+					<ul class="list-group list-group-flush">
+						<a class="btn btn-primary mb-3" href="./pages/error404.html" role="button">Accede a todas las ofertas</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="oferta mb-5 ofertaMd">
+    <h3>Ofertas relacionadas a tu ultima visita</h3>
+  </div>
+	<div class="container my-5 ofertaMd">
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row justify-content-between">
+						<div class="col-2 col-md-3">
+							<div class="card">
+								<a href="./pages/productoPc.html">
+									<img src="./Assets/Compu2.webp" alt="Intel Dual Core 8gb Led 22">
+								</a>
+								<div class="linea"></div>
+								<h5>CPU escritorio</h5>
+								<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/productoPc.html" role="button">Ver oferta</a>
+							</div>
+						</div>
+						<div class="col-2 col-md-3">
+							<div class="card">
+								<a href="./pages/productoCell.html">
+									<img src="./Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+								</a>
+								<div class="linea"></div>
+								<h5>Samsung S23</h5>
+								<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/productoCell.html" role="button">Ver oferta</a>
+							</div>
+						</div>
+						<div class="col-2 col-md-3">
+							<div class="card">
+								<a href="./pages/error404.html">
+									<img src="./Assets/camara.webp" class="object-fit-contain" alt="Cámara de video Gadnic Extreme 10">
+								</a>
+								<div class="linea"></div>
+								<h5>Camara Gadnic</h5>
+								<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+							</div>
+						</div>
+						<div class="col-2 col-md-3">
+							<div class="card">
+								<a href="./pages/error404.html">
+									<img src="./Assets/monitor.webp" class="object-fit-contain" alt="Monitor Philips Pc De 27">
+								</a>
+								<div class="linea"></div>
+								<h5>Monitor PC Philips</h5>
+								<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row justify-content-between">
+						<div class="col-2 col-md-3">
+							<div class="card">
+								<a href="./pages/productoPc.html">
+									<img src="./Assets/Compu2.webp" class="object-fit-contain" alt="Intel Dual Core 8gb Led 22">
+								</a>
+							<div class="linea"></div>
+							<h5>CPU escritorio</h5>
+							<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/productoPc.html" role="button">Ver oferta</a>
+						</div>
+					</div>
+					<div class="col-2 col-md-3">
+						<div class="card">
+							<a href="./pages/productoCell.html">
+								<img src="./Assets/cel1.webp" class="object-fit-contain" alt="Samsung Galaxy S23 128gb">
+							</a>
+							<div class="linea"></div>
+							<h5>Samsung S23</h5>
+							<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/productoCell.html" role="button">Ver oferta</a>
+						</div>
+					</div>
+					<div class="col-2 col-md-3">
+						<div class="card">
+							<a href="./pages/error404.html">
+								<img src="./Assets/camara.webp" class="object-fit-contain" alt="Cámara de video Gadnic Extreme 10">
+							</a>
+							<div class="linea"></div>
+							<h5>Camara Gadnic</h5>
+							<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+						</div>
+					</div>
+					<div class="col-2 col-md-3">
+						<div class="card">
+							<a href="./pages/error404.html">
+								<img src="./Assets/monitor.webp" class="object-fit-contain" alt="Monitor Philips Pc De 27">
+							</a>
+							<div class="linea"></div>
+							<h5>Monitor PC Philips</h5>
+							<a class="btn mt-4 mb-3 ofertaBoton" href="./pages/error404.html" role="button">Ver oferta</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon bg-primary me-auto" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon bg-primary ms-auto" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+	</div>
+	<footer class="containerfooter-fluid">
+		<div class="row">
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<div class="containerLogo">
+					<img class="w-25" src="./Assets/logo-pc.png" alt="logo.png">
+				</div>
+				<p class="h1 text-white text-center mt-1 mb-0">Electro Rolling</p>
+				<p class="text-white text-center mb-0">Lo último en Teconologia</p>
+				<p class="text-white text-center mb-0">Solo lo encontrás aquí</p>
+			</div>
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<ul class="list-unstyled text-center fs-5 mt-5 redes-sociales">
+					<li><a href="https://facebook.com"><i class="fa-brands fa-facebook px-2"></i>Facebook</a></li>
+					<li><a href="https://instagram.com"><i class="bi bi-instagram px-2"></i>Instagram</a></li>
+					<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter px-2"></i></i>Twitter-X</a></li>
+				  <p class="fs-6 text-light mt-5 mb-0">&copy; Todos los derechos reservados</p>
+        </ul>
+    	</div>
+			<div class="col-12 col-md-4 fs-3 info-footer text-center mt-3">
+				<p class="fs-4 text-secondary mb-0 mt-2">Atención al cliente:</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-secondary mb-0">Lu a Vi de 09.00 a 18.00</p>
+				<p class="fs-4 text-secondary">Sa de 9.00 a 13.00</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ec0c4b2b27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/cards.CSS">
+    <link rel="stylesheet" href="../styles/categorias.css">
+    <title>Celulares</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light">
+		<div class="container-fluid mx-auto">
+			<a class="navbar-brand" href="../index.html"><i class="fa-sharp fa-solid fa-code fa-xl iconoCodigo"></i></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse divColapso" id="navbarSupportedContent">
+				<form class="d-flex mx-auto">
+					<input class="form-control me-2 buscar" type="search" placeholder="Buscar producto" aria-label="Search">
+					<button class="btn btn-light" type="submit">Buscar</button>
+				</form>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Categorías
+						</a>
+						<ul class="dropdown-menu navCategorias">
+							<li>
+								<a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../pages/celulares.html">Celulares</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../pages/notebooks.html">Computadoras</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../pages/error404.html">Electrodomesticos</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="../pages/error404.html">Monitotes</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Cuenta
+						</a>
+						<ul class="dropdown-menu registro">
+							<li>
+								<a class="dropdown-item navRegistro" href="./login.html">Inicia sesion</a>
+							</li>
+							<li>
+								<a class="dropdown-item navRegistro" href="./register.html">Registrate</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./acerca.html">Acerca</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pages/carrito.html" style="padding-top: 0;"><i class="bi bi-cart3" style="font-size: 1.5rem; "></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="text-center">
+		<img src="../assets/ImagenCarrusel6.webp" class="img-thumbnail mx-auto w-75 d-block object-fit-contain" alt="#">
+	</div>
+	<div class="container-fluid text-center py-4 bg-light">
+		<div class="row">
+			<div class="col-md-4 pagos">
+				<img src="../Assets/metodosPago.png" alt="Metodos pago credito debito">
+				<span>Pagá con crédito o débito</span>
+			</div>
+			<div class="col-md-4 pagos">
+				<i class="bi bi-currency-bitcoin"></i>
+				<span>Pagá con Bitcoin a través de la plataforma Binance. <a href="../pages/error404.html">Conocé mas</a></span>
+			</div>
+			<div class="col-md-4 pagos">
+				<i class="bi bi-truck"></i>
+				<span>Envíos a todo el pais <a href="../pages/error404.html">en más de 10 sucursales</a></span>
+			</div>
+		</div>
+	</div>
+	<div class="catalogo">
+		<h3>Lo último en celulares</h3>
+	</div>
+	<div class="container-fluid mt-5">
+		<div class="row align-items-stretch">
+			<div class="col-md-4 col-lg-3 padreFilters">
+				<h3>Marca</h3>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="Celu1">
+					<label class="form-check-label" for="Notebooks">Iphone</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="Celu2">
+					<label class="form-check-label" for="pcescritorio">Samsung</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="Celu3">
+					<label class="form-check-label" for="accesorios">Motorola</label>
+				</div>
+				<h3>Precio</h3>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="precio1">
+					<label class="form-check-label" for="precio1">$100.000 a $299.999</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="precio2">
+					<label class="form-check-label" for="precio2">$300.000 a $599.999</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="precio3">
+					<label class="form-check-label" for="precio3">+$600.000</label>
+				</div>      
+				<div class="mb-2">
+					<h3>Memoria</h3>
+					<select class="form-select-sm">
+					<option>32GB</option>
+					<option>64GB</option>
+					<option>128GB</option>
+					<option>264GB</option>
+					<option>512GB</option>
+					</select>
+				</div>
+				<h3>Proveedor</h3>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="comp1">
+					<label class="form-check-label" for="precio1">Claro</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="comp2">
+					<label class="form-check-label" for="precio2">Personal</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="comp3">
+					<label class="form-check-label" for="precio3">Movistar</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="comp4">
+					<label class="form-check-label" for="precio3">Liberado</label>
+				</div>
+			</div>
+			<div class="col-md-8 col-lg-9 row m-0 align-items-stretch justify-content-start padreCards">
+				<div class="card producto">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/iphone14.jpg" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$889.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>iPhone 14</h5>
+					<p>Celular Apple iPhone 14 - 128GB</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/MotoG22.jpg" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$156.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Moto G22</h5>
+					<p>Motorola G22 Negro 128GB</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/SamsungS23Ultra.jpg" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$779.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung S23 Ultra</h5>
+					<p>Samsung Galaxy S23 Ultra 256gb Cream</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/Zflip5.webp" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$889.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung Z Flip5</h5>
+					<p>Samsung Galaxy Z Flip5 256gb Cream</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>  
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/samsung-a54.webp" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$306.499</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung A54</h5>
+					<p>Samsung A54 5G 256GB</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/productoCell.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/S23.webp" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$568.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung S23</h5>
+					<p>Samsung Galaxy S23Plus 256GB Phantom Black</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/productoCell.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/Redmi-note.webp" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$319.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Redmi Note 12</h5>
+					<p>Xiaomi Redmi Note 12Pro Negro 256GB</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/samsung_a34.png" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$156.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Samsung A34</h5>
+					<p>Samsung Galaxy A34 128GB Awesome Graphite</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+				<div class="card producto ">
+					<a href="../pages/error404.html">
+					<img class="w-75 mx-auto object-fit-contain" src="../assets/celulares/Moto-Edge30.webp" alt=""></a>
+					<div class="linea"></div>
+					<span class="monto">$234.999</span> 
+					<span class="descuento">11% off</span>
+					<span class="gratis">Envío gratis</span>
+					<h5>Motorola Edge30</h5>
+					<p>Motorola Edge30 Neo 128GB Very Perry</p>
+					<a class="btn mt-4 mb-3 ofertaBoton" href="../pages/error404.html" role="button">Ver oferta</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- AQUI TERMINAN LAS CARDS -->
+	<div class="align-content-center mt-5 justify-content-center">
+		<nav aria-label="Page navigation">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+			</ul>
+		</nav>
+	</div>
+<!-- AQUI EMPIEZA EL FOOTER -->
+	<footer class="containerfooter-fluid">
+		<div class="row">
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<div class="containerLogo">
+					<img class="w-25" src="../assets/logo-pc.png" alt="logo.png">
+				</div>
+				<p class="h1 text-white text-center mt-1 mb-0">Electro Rolling</p>
+				<p class="text-white text-center mb-0">Lo último en Teconologia</p>
+				<p class="text-white text-center mb-0">Solo lo encontrás aquí</p>
+			</div>
+			<div class="col-12 col-md-4 mb-4 mb-md-0">
+				<ul class="list-unstyled text-center fs-5 mt-5 redes-sociales">
+					<li><a href="https://facebook.com"><i class="fa-brands fa-facebook px-2"></i>Facebook</a></li>
+					<li><a href="https://instagram.com"><i class="bi bi-instagram px-2"></i>Instagram</a></li>
+					<li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter px-2"></i></i>Twitter-X</a></li>
+					<p class="fs-6 text-light mt-5 mb-0">&copy; Todos los derechos reservados</p>
+				</ul>
+			</div>
+			<div class="col-12 col-md-4 fs-3 info-footer text-center mt-3">
+				<p class="fs-4 text-secondary mb-0 mt-2">Atención al cliente:</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-white mb-0">0800-111-2345</p>
+				<p class="fs-4 text-secondary mb-0">Lu a Vi de 09.00 a 18.00</p>
+				<p class="fs-4 text-secondary">Sa de 9.00 a 13.00</p>
+			</div>
+		</div>
+	</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

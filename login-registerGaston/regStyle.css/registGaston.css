@@ -1,0 +1,269 @@
+@keyframes girar{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* 
+
+animation-duration: 1s;
+animation-name: girar;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --azul-oscuro:#4682A9;
+    --azul-medio:#4FB9FC;
+    --azul-claro:#749BC2;
+    --celeste:#91c8a0;    
+    --blanco: #F6F4EB;
+}
+
+body{
+    
+    background-image: url('/login-registerGaston/Assets/FondoRegist.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(51, 51, 51, 0.1);
+    /* background-color: rgb(51, 51, 51); Pongo esto, porque el blur del fondo hace que se vea el blanco del body */
+}
+
+.containerform{
+    /* border-radius: 16px; */
+    /* background-color: var(--azul-medio); */
+    border-radius: 6px;
+    margin: auto;
+    background-color: var(--blanco);
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contenedorlogo{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedorlogo img{
+    width: 40%;
+}
+
+.forminput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.forminput label{
+    /* color: var(--blanco); */
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--azul-medio);
+}
+
+.forminput input{
+    height: 30px;
+    padding-left: 0.5rem;
+    margin-top: 0.4rem;
+    background-color: transparent;
+    border: 1.5px solid #a2a7aa;
+    /* border-bottom: 2px solid #f6f4eb50; */
+    /* color: var(--blanco); */
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.forminput input:focus{
+    border: 1px solid #91c8E4;
+    border-radius: 8px;
+    border: none;
+}
+
+.forminput input:focus-visible{
+    outline: none;
+    outline: 1px solid black;
+    border-radius: 8px;
+    border: none;
+}
+
+.rowformcompartido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.rowform{
+    width: 100%;
+}
+    
+.submitbutton{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.submitbutton button{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    border: none;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 0.5rem;
+    outline: 3px solid transparent;
+    outline-offset: -3px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 1px; 
+}
+
+.submitbutton button:hover{
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+    /* outline: 3px solid var(--azul-medio); */
+    /* outline-offset: 3px; */
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.containerform a{
+    text-decoration: none;
+    color: var(--azul-medio);
+    position: absolute;
+    right: 1.5rem;
+    font-weight: 500;
+}
+
+.containerform a:hover{
+    color: var(--azul-oscuro);
+}
+
+.containerform h1{
+    color: var(--azul-medio);
+    text-align: center;
+}
+
+@media (max-width: 576px){
+ 
+    .contenedorlogo img{
+        width: 80%;
+    }
+
+    .containerform{
+        width: 80%;
+        padding-block: 2rem;
+        padding-inline: 1rem;
+        margin-bottom: 5rem;
+    }
+  
+    .containerform h1{
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .rowformcompartido div{
+        width: 100%;
+        
+    }
+
+    .forminput{
+        margin-top: 1rem;
+    }
+
+    .submitbutton{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width:992px){
+    
+    .contenedorlogo img{
+        width: 80%;
+    }
+
+    .containerform{
+        width: 80%;
+        padding-block: 2rem;
+        padding-inline: 1.5rem;
+    }     
+    
+    .containerform h1{
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .rowformcompartido div{
+        width: 100%;
+    }
+        
+    .forminput{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+    
+    .contenedorlogo img{
+        width: 40%;
+    }
+
+    .containerform{
+        width: 40%;
+        padding-block: 2rem;
+        padding-inline: 1.5rem;
+    }     
+
+    .containerform h1{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .rowformcompartido div{
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .contenedorlogo img{
+        width: 40%;
+    }     
+
+    .containerform{
+        width: 40%;
+        padding-block: 2rem;
+        padding-inline: 1.5rem;
+    }
+
+    .containerform h1{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .rowformcompartido div{
+        width: 48%;  
+    }
+}

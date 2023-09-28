@@ -1,0 +1,163 @@
+*{
+   font-family: Proxima Nova,-apple-system,Helvetica Neue;
+}
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.nav-link:focus{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.monto{
+    font-size: 24px;
+}
+
+@media (max-width: 766px){
+    .divColapso{
+        margin-top: 10px;
+    }
+    .pagos{
+        padding-block: 1rem;
+    }
+}
+
+@media (min-width:767px) and (max-width: 992px){
+    .navbar{
+        padding-top: 5px;
+        text-align: center;
+    }
+    .navbar-nav{ 
+        padding-top: 7px;
+    }
+    .divColapso{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 993px){
+    .navbar{
+        padding-inline: 0;
+    }
+    .form-control{
+        font-size: 1.2rem;
+    }
+    .divColapso{
+        font-size: 1.2rem;
+    }
+}
+
+.promociones{
+    background-color: #E2E2E2;
+    margin-bottom: 2rem;
+}
+
+
+
+.oferta{
+    width: 100%;
+    margin-top: 1rem;
+    padding-block: 1rem;
+    background-color: #4FB9FC;
+    color: aliceblue;
+    text-align: center;
+}
+
+.productoOferta{
+    width: 100%;
+}
+
+
+.card{
+    padding-inline: 1rem;
+}
+
+
+.card img {
+    display: flex;
+    padding-inline: 3px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 223px;
+
+}
+
+.gratis {
+    color: #05c863;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div .descuento {
+    color: rgb(48, 214, 2);
+    font-size: 13px;
+    margin-top: 2px;
+    margin-right: 3px;
+    font-weight: 700;
+}
+
+div .monto, div .descuento {
+    background-color: white;
+    align-items: flex-start;
+    font-weight: 400;
+}
+
+.card p {
+    background-color: white;
+    color: #777;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    padding-block: 0.2rem;
+}
+
+.card h5{
+    padding-top: 5px;
+}
+
+div .descuento {
+    color: #05c863;
+    font-size: 14px;
+    margin-top: auto;
+    margin-right: 2px;
+}
+
+.linea {
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: 10px 0px 15px 0px;
+}
+
+.ofertaProducto:hover {
+    transform: scale(1.1);
+    transition: transform .4s;
+    box-shadow: 1px 9px 11px 4px rgba(0,0,0,0.73);
+}
+
+.redes-sociales a{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info-footer{
+    color:white;
+}
+
+.containerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+

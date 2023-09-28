@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ec0c4b2b27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/cards.CSS">
+    <link rel="stylesheet" href="./styles/categorias.css">
+    <title>Accesorios</title>
+</head>
+<body>
+    <!-- AQUI VA EL NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light"  style="background-color: #4FB9FC">
+        <div class="container-fluid mx-auto">
+            <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-code fa-xl" style="color: #ffffff;"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse divColapso" id="navbarSupportedContent">
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2 buscar" type="search" placeholder="Buscar producto" aria-label="Search">
+                    <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
+                        <ul class="dropdown-menu navCategorias">
+                            <li>
+                                <a class="dropdown-item" href="#">Accesorios</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./celulares.html">Celulares</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./notebooks.html">Computadoras</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Registrate</a>
+                        <ul class="dropdown-menu registro">
+                            <li><a class="dropdown-item navRegistro" href="#">Inicia Sesion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link href=#" style="padding-top: 0;"><i class="bi bi-cart3" style="font-size: 1.5rem; "></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- AQUI TERMINA EL NAVBAR -->
+
+    <!-- AQUI EMPIEZA EL BANNER -->
+    <div class="text-center">
+        <img src="./assets/Ryzen.jpg" class="img-thumbnail mx-auto w-75 d-block object-fit-contain" alt="#">
+    </div>
+    <div class="container-fluid text-center py-4 bg-light">
+        <div class="row">
+            <div class="col-md-4 pagos">
+                <img src="../Pagina principal/Assets/metodosPago.png" style="width: 14rem;" alt="">
+                <span style="font-size: 1rem;">Pagá con crédito o débito</span>
+            </div>
+            <div class="col-md-4 pagos">
+                <i class="bi bi-currency-bitcoin"></i>
+                <span style="font-size: 1rem;">Pagá con Bitcoin a través de la plataforma Binance. <a href="">Conocé mas</a></span>
+            </div>
+            <div class="col-md-4 pagos">
+                <i class="bi bi-truck"></i>
+                <span style="font-size: 1rem;">Envíos a todo el pais <a href="">en más de 10 sucursales</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- AQUI TERMINA EL BANNER -->
+    <div class="catalogo">
+        <h3>Los Mejores en Accesorios</h3>
+    </div>
+    <!--AQUI VAN LAS CARDS -->
+    <div class="container-fluid mt-5">
+        <div class="row align-items-stretch">
+            <div class="col-md-4 col-lg-3 padreFilters">
+                <h3>Marca</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="marca1">
+                    <label class="form-check-label" for="marca1">Genérica</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Marca2">
+                    <label class="form-check-label" for="Marca2">Soul</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Marca3">
+                    <label class="form-check-label" for="Marca3">Apple</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Marca4">
+                    <label class="form-check-label" for="Marca4">Samsung</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Marca5">
+                    <label class="form-check-label" for="Marca5">Apple</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Marca6">
+                    <label class="form-check-label" for="Marca6">Motorola</label>
+                </div>
+                <h3>Categorías</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cat1">
+                    <label class="form-check-label" for="cat1">Fundas y Protectores</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cat2">
+                    <label class="form-check-label" for="cat2">Auriculares</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cat3">
+                    <label class="form-check-label" for="cat3">Teclados</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cat4">
+                    <label class="form-check-label" for="cat4">Mouse</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cat5">
+                    <label class="form-check-label" for="cat5">Cargadores y Accesorios</label>
+                </div>
+                <h3>Precio</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="precio1">
+                    <label class="form-check-label" for="precio1">Hasta $3.000</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="precio2">
+                    <label class="form-check-label" for="precio2">$3.000 a $20.000</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="precio3">
+                    <label class="form-check-label" for="precio3">Más de $20.000</label>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9 row m-0 align-items-stretch justify-content-start padreCards">
+                <div class="card producto">
+                <a href="#">
+                <img class="mx-auto object-fit-contain" src="./assets/accesorios/teclado.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$56.759</span> 
+                <span class="descuento">10% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Teclado Gamer</h5>
+                <p>Teclado Gaming Keyboard Flotante Con Cable Usb-t2w4</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto">
+                <a href="#">
+                <img class="mx-auto object-fit-contain" src="./assets/accesorios/auri-vincha.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$10.359</span> 
+                <span class="descuento">15% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Auricular Bluetooth Netmak</h5>
+                <p>Auricular Vincha Bluetooth Inalambrico/cable Netmak Nm-volt</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto">
+                <a href="#">
+                <img class="mx-auto object-fit-contain" src="./assets/accesorios/sillon-gamer.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$72.590</span> 
+                <span class="descuento">5% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Sillon Gamer Pontec</h5>
+                <p>Silla Gamer Sillón Oficina Negro Y Rojo Basculante Calidad</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto ">
+                <a href="#">
+                <img class="mx-auto object-fit-contain" src="./assets/accesorios/Hub-USB.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$5.624</span> 
+                <span class="descuento">5% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Hub Usb C 3.1 Multiple X4</h5>
+                <p>Hub Usb 3.0 Adaptador Para Las Nuevas Macbook Con Thunderbolt 3 Color Negro</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>  
+                <div class="card producto ">
+                <a href="#">
+                <img class="mx-auto w-50 object-fit-contain" src="./assets/accesorios/Mouse.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$33.909</span> 
+                <span class="descuento">12 cuotas s/int.</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Mouse Gamer VEGCOO</h5>
+                <p>Wireless Gaming Mouse, VEGCOO C8 Silent Click Inalambrico Recargable con Luces LED color</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto ">
+                <a href="#">
+                <img class="mx-auto object-fit-contain w-50" src="./assets/accesorios/lapiz-optico.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$4.940</span> 
+                <span class="descuento">5% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Lapiz Óptico</h5>
+                <p>Lapiz Óptico Para Tablet Y Celula Táctil Dibujo Stylus Doble</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto ">
+                <a href="#">
+                <img class="mx-auto w-50 object-fit-contain" src="./assets/accesorios/funda-ip.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$3.200</span> 
+                <span class="descuento">10% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Silicone Case Iphone</h5>
+                <p>Funda Silicona Silicone Case Para iPhone 13 14 14 Pro Max</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto ">
+                <a href="#">
+                <img class="w-50 mx-auto object-fit-contain" src="./assets/accesorios/Cable-ip.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$7.899</span> 
+                <span class="descuento">20% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Cable tipo C iPhone</h5>
+                <p>Cable charger Tipo C iPhone 11 12 13 14</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+                <div class="card producto ">
+                <a href="#">
+                <img class="mx-auto object-fit-contain" src="./assets/accesorios/templado.webp" alt=""></a>
+                <div class="linea"></div>
+                <span class="monto">$1.679</span> 
+                <span class="descuento">6% off</span>
+                <span class="gratis">Envío gratis</span>
+                <h5>Vidrio Templado iPhone</h5>
+                <p>Vidrio Templado Glass Para Modelos iPhone Cubre El 100%</p>
+                <button type="button" class="btn btn-info mb-3">Detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AQUI TERMINAN LAS CARDS -->
+    <div class="align-content-center mt-5 justify-content-center">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- AQUI EMPIEZA EL FOOTER -->
+    <footer class="containerfooter-fluid" style="background-color: #4FB9FC">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <div class="containerLogo">
+                    <img class="w-25" src="./assets/logo-pc.png" alt="logo.png">
+                </div> 
+                <p class="h1 text-white text-center mt-1 mb-0">Electro Rolling</p>
+                <p class="text-white text-center mb-0">Lo último en Teconologia</p>
+                <p class="text-white text-center mb-0">Solo lo encontrás aquí</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <ul class="list-unstyled text-center fs-5 mt-5 redes-sociales">
+                    <li><a href="https://facebook.com"><i class="fa-brands fa-facebook px-2"></i>Facebook</a></li>
+                    <li><a href="https://instagram.com"><i class="bi bi-instagram px-2"></i>Instagram</a></li>
+                    <li><a href="https://twitter.com"><i class="fa-brands fa-x-twitter px-2"></i></i>Twitter-X</a></li>
+                    <p class="fs-6 text-light mt-5 mb-0">&copy; Todos los derechos reservados</p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 fs-3 info-footer text-center mt-3">
+                <p class="fs-4 text-secondary mb-0 mt-2">Atención al cliente:</p>
+                <p class="fs-4 text-white mb-0">0800-111-2345</p>
+                <p class="fs-4 text-white mb-0">0800-111-2345</p>
+                <p class="fs-4 text-secondary mb-0">Lu a Vi de 09.00 a 18.00</p>
+                <p class="fs-4 text-secondary">Sa de 9.00 a 13.00</p>
+            </div>
+        </div>
+    </footer>
+  
+<!-- AQUI TERMINA EL FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
